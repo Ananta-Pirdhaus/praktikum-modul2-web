@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.link-below-calculator {
+  display: block; /* Membuatnya menjadi blok untuk memungkinkan penyesuaian lebar/tata letak */
+  margin-top: 20px; /* Jarak dari kalkulator ke tautan */
+  text-decoration: none; /* Menghapus garis bawah default */
+  color: #007bff; /* Warna teks */
+  font-weight: bold; /* Teks tebal */
+  font-size: 16px; /* Ukuran teks */
+}
+
+.calculator {
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    height: 50px;
+    font-size: 20px;
+    text-align: end;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttons button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttons button:nth-child(4n) {
+    margin-right: 0;
+}
+
+.buttons button:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.buttons button:active {
+    background-color: #e0e0e0;
+}
+
+.buttons button.operator {
+    background-color: #ff8c00;
+    color: #fff;
+}
+
+.buttons button.operator:active {
+    background-color: #e06c00;
+}
+
+.buttons button.clear {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.buttons button.clear:active {
+    background-color: #bb2c3a;
+}
+
+.buttons button.equals {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.buttons button.equals:active {
+    background-color: #218838;
+}
